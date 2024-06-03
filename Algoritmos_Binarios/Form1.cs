@@ -39,6 +39,21 @@ namespace Algoritmos_Binarios
             this.Controls.Add(encabezado); // AÑADIENDO ENCABEZADO A LA INTERFAZ.
 
             // ...FIN DEL ENCABEZADO!
+
+            // AÑADIENDO TEXTO PARA LA CANTIDAD TOTAL DINÁMICAMENTE...
+
+            totalTexto.Text = "Cantidad total: " + total;
+            totalTexto.AutoSize = false; // EL TAMAÑO DE TEXTO SERÁ MANUAL.
+            totalTexto.Width = this.ClientSize.Width; // ANCHO DE ESTE TEXTO POR DEFECTO.
+            totalTexto.Height = 50; // LA ALTURA DEL TEXTO ES DE 50.
+            totalTexto.TextAlign = ContentAlignment.MiddleCenter; // ALIENAMIENTO DE ESTE TEXTO EN EL CENTRO DE LA INTERFAZ.
+            totalTexto.ForeColor = Color.DarkOrange; // EL COLOR DEL TEXTO SERÁ NARANJA.
+            totalTexto.Font = new Font("Arial", 20); // TAMAÑO Y FUENTE DE ESTE TEXTO.
+            totalTexto.Top = 230; // ESTE TEXTO SE UBICA A 230 DE ALTURA.
+            this.Controls.Add(totalTexto); // AÑADE ESTE TEXTO TRAS COMPLETAR ESTE PROCEDIMIENTO.
+
+
+            // ...FIN DE ESTE APARTADO!
         }
     }
 }
