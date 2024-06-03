@@ -6,6 +6,6 @@
 - _Todos los cuadros combinados tienen un valor marcado encima para que podamos seleccionar entre 1, 2, 4, 8, 16, 32, 64, 128 y 256._
 - _Si el número binario que hemos agregado es correcto, el programa nos dará Danos otro número para resolver o podemos seguir intentando resolverlo hasta que lo consigamos._
 - _Fue una aplicación divertida de hacer porque a la mitad decidí agregar todos los componentes del script C#._
-- Entonces, todos los cuadros combinados y etiquetas se agregan dinámicamente desde el script. No se agregó nada desde la caja de herramientas.
+- _Entonces, todos los cuadros combinados y etiquetas se agregan dinámicamente desde el script. No se agregó nada desde la caja de herramientas._
 - Además, los eventos se agregan al programa desde el script y también se administran en el mismo script.
 - Creo que esto te dará una mejor idea sobre cómo crear una aplicación sencilla solo a partir del script y hacer que funcione tal como quieres.
