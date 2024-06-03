@@ -1,6 +1,6 @@
 # CalculadoraBinaria
 
-- _En este tutorial crearemos un juego de preguntas sobre calculadora binaria utilizando la aplicación Windows Form y Visual Studio._
+- **_En este tutorial crearemos un juego de preguntas sobre calculadora binaria utilizando la aplicación Windows Form y Visual Studio._**
 - _Esta aplicación tendrá 9 cuadros combinados, cada cuadro combinado contendrá un 0 o un 1._
 - _Se generará un número aleatorio y la aplicación le pedirá al usuario que resuelva ese número en binario._
 - _Todos los cuadros combinados tienen un valor marcado encima para que podamos seleccionar entre 1, 2, 4, 8, 16, 32, 64, 128 y 256._
