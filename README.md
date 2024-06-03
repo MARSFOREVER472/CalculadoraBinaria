@@ -7,5 +7,5 @@
 - **_Si el número binario que hemos agregado es correcto, el programa nos dará otro número para resolver o podemos seguir intentando resolverlo hasta que lo consigamos._**
 - **_Fue una aplicación divertida de hacer porque a la mitad decidí agregar todos los componentes del script C#._**
 - **_Entonces, todos los cuadros combinados y etiquetas se agregan dinámicamente desde el script. No se agregó nada desde la caja de herramientas._**
-- _Además, los eventos se agregan al programa desde el script y también se administran en el mismo script._
+- **_Además, los eventos se agregan al programa desde el script y también se administran en el mismo script._**
 - _Creo que esto te dará una mejor idea sobre cómo crear una aplicación sencilla solo a partir del script y hacer que funcione tal como quieres._
