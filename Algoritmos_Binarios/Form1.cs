@@ -54,6 +54,42 @@ namespace Algoritmos_Binarios
 
 
             // ...FIN DE ESTE APARTADO!
+
+            // APARTADO 3: AGREGAR LAS CASILLAS A DICHO NÚMERO BINARIO A CONVERTIR...
+
+            // VARIABLES A DISTANCIAR MEDIANTE POSICIONES...
+
+            int x = 30; // POSICIÓN DE DICHO COMPONENTE EN X.
+            int y = 120; // POSICIÓN DE DICHO COMPONENTE EN Y.
+
+            // CREAREMOS UN CICLO "for" PARA AGREGAR CADA CASILLA (EN TOTAL SON 8 DE ÉSTAS) CON SUS RESPECTIVOS ATRIBUTOS...
+
+            for (int i = 0; i < 9; i++)
+            {
+                ComboBox casilla = new ComboBox(); // COMPONENTE ASOCIADO A CADA CASILLA.
+
+                casilla.Width = 50; // ANCHO DE LA CASILLA.
+                casilla.Items.Add("0"); // PRIMER NÚMERO BINARIO, SUPONGA QUE ESTÁ EN FALSO.
+                casilla.Items.Add("1"); // SEGUNDO NÚMERO BINARIO, SUPONGA QUE ESTÁ EN VERDADERO.
+                casilla.SelectedIndex = 0; // ÍNDICE POR DEFECTO PARA CADA CASILLA.
+                casilla.Font = new Font("Arial", 16); // FUENTE Y TAMAÑO DE TEXTO PARA EL INTERIOR DE CADA CASILLA.
+                casilla.DropDownStyle = ComboBoxStyle.DropDownList; // BOTONES DE CASILLA PARA AJUSTAR AL MAYOR O AL MENOR VALOR.
+                casilla.Tag = valoresBinarios[i].ToString(); // ETIQUETA DE VALORES A LAS CASILLAS.
+                casilla.Left = x; // CASILLAS ORIENTADAS HORIZONTALMENTE.
+                casilla.Top = y; // CASILLAS ORIENTADAS VERTICALMENTE.
+                casilla.FlatStyle = FlatStyle.Flat; // APARIENCIA DE CADA CASILLA POR DEFECTO.
+                casilla.SelectionChangeCommitted += Casilla_Eleccion; // CONSEJO: CREAR ESTE MÉTODO ASOCIADO AL VALOR YA DECLARADO EN ESTA LÍNEA DE CÓDIGO.
+                cajasDeValoresBinarios.Add(casilla);
+
+                // ...FIN DE ESTE CICLO!!!
+            }
+
+            // ...FIN DE ESTE APARTADO!!!!!
+        }
+
+        private void Casilla_Eleccion(object sender, EventArgs e)
+        {
+            // EN INSTANTES...
         }
     }
 }
