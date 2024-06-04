@@ -15,6 +15,6 @@
 - **_Crear un juego de preguntas sobre calculadora binaria en Windows Form y Visual Studio._**
 - **_Crear todo el juego desde el script C# de forma dinámica._**
 - **_Agregar los cuadros combinados y las etiquetas del script._**
-- **_Agregue colores aleatorios a las etiquetas y cuadros combinados._**
+- **_Agregar colores aleatorios a las etiquetas y cuadros combinados._**
 - **_Modificar la altura, el ancho y el color de fondo del formulario desde el script._**
 - **_Agregar eventos a los cuadros combinados dinámicamente._**
