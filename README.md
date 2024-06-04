@@ -17,4 +17,4 @@
 - Agregue los cuadros combinados y las etiquetas del script.
 - Agregue colores aleatorios a las etiquetas y cuadros combinados.
 - Modificar la altura, el ancho y el color de fondo del formulario desde el script.
-- Agregar eventos a los cuadros combinados dinámicamente
+- Agregar eventos a los cuadros combinados dinámicamente.
