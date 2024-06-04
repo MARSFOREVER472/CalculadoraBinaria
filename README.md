@@ -9,3 +9,12 @@
 - **_Entonces, todos los cuadros combinados y etiquetas se agregan dinámicamente desde el script. No se agregó nada desde la caja de herramientas._**
 - **_Además, los eventos se agregan al programa desde el script y también se administran en el mismo script._**
 - **_Creo que esto te dará una mejor idea sobre cómo crear una aplicación sencilla solo a partir del script y hacer que funcione tal como quieres._**
+
+Objetivos de la lección -
+
+Cree un juego de preguntas sobre calculadora binaria en Windows Form y Visual Studio
+Crea todo el juego desde el script C# de forma dinámica
+Agregue los cuadros combinados y las etiquetas del script
+Agregue colores aleatorios a las etiquetas y cuadros combinados
+cambiar la altura, el ancho y el color de fondo del formulario desde el script
+Agregar eventos a los cuadros combinados dinámicamente
