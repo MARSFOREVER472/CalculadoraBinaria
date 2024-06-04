@@ -12,7 +12,7 @@
 
 ### Objetivos de la lección: 
 
-- **_Cree un juego de preguntas sobre calculadora binaria en Windows Form y Visual Studio._**
+- **_Crear un juego de preguntas sobre calculadora binaria en Windows Form y Visual Studio._**
 - **_Crea todo el juego desde el script C# de forma dinámica._**
 - **_Agregue los cuadros combinados y las etiquetas del script._**
 - **_Agregue colores aleatorios a las etiquetas y cuadros combinados._**
