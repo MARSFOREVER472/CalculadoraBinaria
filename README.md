@@ -10,7 +10,7 @@
 - **_Además, los eventos se agregan al programa desde el script y también se administran en el mismo script._**
 - **_Creo que esto te dará una mejor idea sobre cómo crear una aplicación sencilla solo a partir del script y hacer que funcione tal como quieres._**
 
-Objetivos de la lección 
+Objetivos de la lección: 
 
 Cree un juego de preguntas sobre calculadora binaria en Windows Form y Visual Studio
 Crea todo el juego desde el script C# de forma dinámica
