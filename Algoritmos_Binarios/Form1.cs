@@ -81,6 +81,30 @@ namespace Algoritmos_Binarios
                 casilla.SelectionChangeCommitted += Casilla_Eleccion; // CONSEJO: CREAR ESTE MÉTODO ASOCIADO AL VALOR YA DECLARADO EN ESTA LÍNEA DE CÓDIGO.
                 cajasDeValoresBinarios.Add(casilla);
 
+                // ...FIN DE EDICIÓN DE LAS CASILLAS!!!!
+
+                // ANTES DE CERRAR EL CICLO, AGREGAREMOS MÁS VARIABLES A LA INTERFAZ DINÁMICAMENTE...
+
+                Label etiquetaValores = new Label(); // ETIQUETA DE VALORES.
+                etiquetaValores.Text = valoresBinarios[i].ToString(); // TEXTO MEDIANTE VALORES BINARIOS POR CASILLA.
+                etiquetaValores.Font = new Font("Arial", 16); // TAMAÑO Y FUENTE DE TEXTO HACIA LOS VALORES BINARIOS.
+                etiquetaValores.Location = new Point(x, y - 32); // UBICACIÓN DE LOS VALORES BINARIOS POR CASILLAS.
+                etiquetaValores.AutoSize = false; // LA ETIQUETA DE VALORES BINARIOS TENDRÁN UN TAMAÑO ESTÁTICO POR DEFECTO.
+                etiquetaValores.Width = 50; // ANCHO DE LOS VALORES BINARIOS.
+                etiquetaValores.Height = 30; // ALTURA DE LOS VALORES BINARIOS.
+
+                Color barniz = Color.FromArgb(aleatorio.Next(200, 255), aleatorio.Next(150, 255), aleatorio.Next(150, 255)); // COLORES DE VALORES BINARIOS SERÁN ALEATORIOS.
+
+                etiquetaValores.BackColor = barniz; // EL COLOR DE FONDO DE CADA VALOR DEPENDE DEL BARNIZ.
+                etiquetaValores.ForeColor = Color.Black; // EL COLOR DE CUALQUIER VALOR BINARIO SIEMPRE SERÁ NEGRO.
+                etiquetaValores.TextAlign = ContentAlignment.MiddleCenter; // LA ORIENTACIÓN DE LOS VALORES BINARIOS SIEMPRE SERÁ CENTRADO MEDIANTE SIMETRÍA PUNTUAL POR CADA CASILLA DE VALORES BINARIOS.
+                casilla.BackColor = barniz; // EL COLOR DE CADA CASILLA DEPENDERÁ DEL BARNIZ YA DECLARADO ANTERIORMENTE.
+
+                // FINALMENTE, SE VAN AÑADIENDO ESTAS VARIABLES UNA VEZ QUE SE DECLARARON VARIAS CARACTERÍSTICAS ASOCIADAS A ELLAS...
+
+                this.Controls.Add(casilla);
+                this.Controls.Add(etiquetaValores);
+
                 // ...FIN DE ESTE CICLO!!!
             }
 
