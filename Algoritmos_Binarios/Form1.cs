@@ -113,7 +113,24 @@ namespace Algoritmos_Binarios
 
         private void Casilla_Eleccion(object sender, EventArgs e)
         {
-            // EN INSTANTES...
+            // MÉTODO PARA MODIFICAR LOS VALORES BINARIOS DENTRO DE UNA CASILLA...
+
+            string codigoBinario = null; // EL CÓDIGO BINARIO DEVUELVE INICIALMENTE UN NULL.
+            total = 0; // LA CANTIDAD TOTAL DE NÚMEROS BINARIOS DENTRO DE UNA CASILLA INICIALIZA EN 0.
+
+            // PARA CADA CASILLA DEL TABLERO POR NÚMEROS BINARIOS...
+
+            foreach (ComboBox caja in cajasDeValoresBinarios)
+            {
+                if (caja.SelectedIndex == 1) // SI EL VALOR DE UNA CASILLA ES IGUAL A 1...
+                {
+                    int i = Convert.ToInt32(caja.Tag); // EL VALOR DEL ÍNDICE SON DE 32 BITS ENTEROS COMO MÁXIMO DENTRO DE CADA CASILLA.
+
+                    total += i; // EL TOTAL DEL ÍNDICE VA INCREMENTANDO.
+                }
+
+                codigoBinario += caja.Text; // TEXTO DENTRO DE CADA CASILLA MEDIANTE CÓDIGO BINARIO.
+            }
         }
     }
 }
