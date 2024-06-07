@@ -1,3 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace Algoritmos_Binarios
 {
     public partial class Form1 : Form
@@ -16,6 +26,7 @@ namespace Algoritmos_Binarios
         public Form1()
         {
             InitializeComponent();
+            CargarJuego(); // LLAMADO DEL MÉTODO.
         }
 
         public void CargarJuego()
@@ -105,6 +116,8 @@ namespace Algoritmos_Binarios
                 this.Controls.Add(casilla);
                 this.Controls.Add(etiquetaValores);
 
+                x += 60; // DISTANCIANDO CASILLA POR CASILLA...
+
                 // ...FIN DE ESTE CICLO!!!
             }
 
@@ -130,6 +143,29 @@ namespace Algoritmos_Binarios
                 }
 
                 codigoBinario += caja.Text; // TEXTO DENTRO DE CADA CASILLA MEDIANTE CÓDIGO BINARIO.
+            }
+
+            totalTexto.Text = "Total: " + total + "Binario: " + codigoBinario;
+
+            if (total == preguntaNumerica) // SI ES IDÉNTICO AL NÚMERO QUE LE PREGUNTAN...
+            {
+                MessageBox.Show("RESPUESTA CORRECTA!!!!");
+                preguntaNumerica = aleatorio.Next(1, 510); // SE ELIGE OTRA PREGUNTA POR MEDIO DE ESTE INTERVALO NUMÉRICO.
+
+                pregunta.Text = "QUÉ SIGNIFICA - " + preguntaNumerica + " EN NÚMEROS BINARIOS? ";
+                total = 0; // INICIALIZA EL TOTAL DE AQUEL NÚMERO CUANDO LE PREGUNTAN.
+                codigoBinario = null;
+                ReiniciarJuego(); // LLAMADO DE LA FUNCIÓN DECLARADA ABAJO.
+                totalTexto.Text = "Total: " + total + " BINARIO: " + codigoBinario;
+
+            }
+        }
+
+        private void ReiniciarJuego()
+        {
+            foreach (ComboBox cajas in cajasDeValoresBinarios)
+            {
+                cajas.SelectedIndex = 0; // VUELVE A JUGAR OTRA VEZ INICIALIZANDO DE ESTA MANERA.
             }
         }
     }
