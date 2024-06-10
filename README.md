@@ -9,7 +9,7 @@
 - So all the combo boxes and labels are added dynamically from the script.
 - Nothing was added from the tool box.
 - Also the events are added to the program from the script and its also managed in the same script.
-- I think this will give you a better idea on how to create a simple app just from the script and have it work jus the way you want it to.
+- I think this will give you a better idea on how to create a simple app just from the script and have it work just the way you want it to.
 
 - **_En este tutorial crearemos un juego de preguntas sobre calculadora binaria utilizando la aplicación Windows Form y Visual Studio._**
 - **_Esta aplicación tendrá 9 cuadros combinados, cada cuadro combinado contendrá un 0 o un 1._**
